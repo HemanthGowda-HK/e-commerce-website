@@ -1,0 +1,52 @@
+.recommended-flex {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25rem;
+}
+
+.recommended-title {
+    margin-left: 20rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+/* Define a @keyframes animation for the border color change */
+@keyframes glowing {
+    0% { border-color: #ff06a4; }
+    25% { border-color: hsla(308, 81%, 41%, 0.843); }
+    50% { border-color: #de50cfbe; }
+    75% { border-color: #f734dd95; }
+    100% { border-color: hsl(304, 100%, 45%); }
+    80% { border-color: hsla(240, 100%, 22%, 0.937); }
+    10% { border-color: hsla(234, 100%, 14%, 0.735); }
+    15% { border-color: hsla(186, 25%, 85%, 0.945); }
+    60% { border-color: #5e5c63d1; }
+    30% { border-color: hsl(244, 78%, 21%); }
+    
+}
+
+/* Apply the animation to .btns class */
+.btns {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: #323232;
+    cursor: pointer;
+    font-family: inherit;
+    animation: glowing 4s infinite; /* Apply the animation */
+    transition: color 0.3s; /* Add transition for text color change */
+}
+
+/* On hover, change the text color and prevent it from disappearing */
+.btns:hover {
+    color: #ff3700; /* Change text color to white */
+}
+
+/* To remove margin from the last button */
+.btns:last-child {
+    margin-right: 0;
+}
